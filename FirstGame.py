@@ -4,7 +4,6 @@ import random
 
 wn = turtle.Screen()
 wn.bgcolor("black")
-wn.bgpic("white.gif")
 wn.tracer(3)
 
 mypen = turtle.Turtle()
@@ -58,7 +57,6 @@ def collision(t1, t2):
         return True
     else:
         return False
-
 turtle.listen()
 turtle.onkey(turnleft, "Left")
 turtle.onkey(turnright, "Right")

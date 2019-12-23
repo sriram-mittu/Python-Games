@@ -111,7 +111,7 @@ while True:
         score += 1
 
         pen.clear()
-        pen.write("Score: {}".format(score, high_score), align="center", font=("Verdana", 24, "normal"))
+        pen.write("Score: {}".format(score), align="center", font=("Verdana", 24, "normal"))
 
         ns = turtle.Turtle()
         ns.speed(0)
@@ -141,7 +141,7 @@ while True:
             score = 0
 
             pen.clear()
-            pen.write("Score: {} ".format(score, high_score),
+            pen.write("Score: {} ".format(score),
                       align="center", font=("Verdana", 24, "normal"))
             
             for segment in segments:

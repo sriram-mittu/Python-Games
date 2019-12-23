@@ -17,20 +17,13 @@ wn.bgcolor("black")
 wn.setup(width=600, height=600)
 wn.tracer(0)
 
-# Register the shapes
-wn.register_shape("body.gif")
-wn.register_shape("left.gif")
-wn.register_shape("right.gif")
-wn.register_shape("up.gif")
-wn.register_shape("down.gif")
-wn.register_shape("circle.gif")
-wn.register_shape("apple.gif")
+# Register the shapes 
 
 # Create the snake head
 head = turtle.Turtle()
 head.speed(0)
 head.shape("circle")
-head.color("lightblue")
+head.color("white")
 head.penup()
 head.goto(0, 0)
 head.direction = "stop"
@@ -38,7 +31,7 @@ head.direction = "stop"
 # Create the food
 food = turtle.Turtle()
 food.speed(0)
-food.shape("apple.gif")
+food.shape("circle")
 food.color("grey")
 food.penup()
 food.goto(0, 100)
@@ -63,22 +56,22 @@ pen.write("   Score: 0 | High Score: 0", align="center",
 def up():
     if head.direction != "down":
         head.direction = "up"
-        head.shape("up.gif")
+        head.shape("circle")
 
 def down():
     if head.direction != "up":
         head.direction = "down"
-        head.shape("down.gif")
+        head.shape("circle")
 
 def right():
     if head.direction != "left":
         head.direction = "right"
-        head.shape("right.gif")
+        head.shape("circle")
 
 def left():
     if head.direction != "right":
         head.direction = "left"
-        head.shape("left.gif")
+        head.shape("circle")
 
 # Create the function that moves the snake
 def move():
@@ -138,7 +131,7 @@ while True:
         # Add a new segment
         ns = turtle.Turtle()
         ns.speed(0)
-        ns.shape("body.gif")
+        ns.shape("circle")
         ns.color("white")
         ns.penup()
         segments.append(ns)

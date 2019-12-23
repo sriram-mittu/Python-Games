@@ -137,4 +137,4 @@ while True:
 
     pygame.display.set_caption("Snake | Score : "+ str(score) )
     pygame.display.flip()
-    fps.tick(5)
+    fps.tick(10)
